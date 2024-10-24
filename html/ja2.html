@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción de HTML5</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #29919ec7, #171844);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: background 0.5s ease;
+            display: flex;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .descripcion h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .descripcion h3 {
+            color: #0056b3;
+            margin-top: 15px;
+        }
+
+        .descripcion p,
+        .descripcion ul {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .descripcion ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Efecto de botón */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para los contenedores adicionales */
+        .additional-container {
+            background-color: #f0f8ff;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-container h4 {
+            color: #007BFF;
+        }
+
+        /* Estilo para las barras laterales */
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .sidebar h4 {
+            color: #007BFF;
+        }
+
+        .sidebar p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        /* Responsividad */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS3</h1>
+            <p>La experiencia de un aprendiz de CSS.</p>
+        </header>
+    
+        <section class="descripcion">
+            <h2>Mi Trayectoria Aprendiendo CSS</h2>
+            <p>Cuando empecé a aprender desarrollo web, enseguida me di cuenta de que HTML no era nada sin css. Una herramienta que le daba color y estilo a mis páginas., pero al ver cómo cambiaban mis páginas con solo agregar estilos.</p>
+    
+            <h3>Lo Que Aprendí</h3>
+            <p>Con el tiempo, fui descubriendo que CSS no solo era para darle color. Aprendí a usar propiedades para el diseño de layouts, como <code>display</code>, <code>flex</code> y <code>grid</code>. Me metí en el mundo de las fuentes y el espaciado, entendí la importancia de la tipografía y cómo elegir bien los colores para que todo se vea bien. ¡Una maravilla!</p>
+    
+            <h3>Herramientas y Recursos</h3>
+            <p>Utilicé varias herramientas que me facilitaron el trabajo, como:</p>
+            <ul>
+                <li><strong>Editores de texto</strong>: Visual Studio Code y Sublime Text, que hacen la vida más fácil.</li>
+                <li><strong>Frameworks CSS</strong>: Bootstrap y Tailwind, que me ayudaron a diseñar más rápido y con estilo.</li>
+            </ul>
+    
+            <h3>Proyectos Personales</h3>
+            <p>Me mandé varios proyectos personales donde pude aplicar todo lo que aprendí. Desde sitios web sencillos hasta portfolios con un diseño más elaborado, cada proyecto fue una oportunidad para experimentar y perfeccionar mis habilidades.</p>
+    
+            <h3>¿Qué Sigo Aprendiendo?</h3>
+            <p>Hoy sigo explorando nuevas técnicas y propiedades de CSS, como animaciones. También me estoy metiendo con CSS en el desarrollo responsive, para que mis sitios se vean bien en cualquier dispositivo. Cada día es una nueva chance para aprender y crecer.</p>
+        </section>
+    
+        <div class="additional-container">
+            <h4>Consejos para Aprender CSS</h4>
+            <p>Si recién arrancás:</p>
+            <ul>
+                <li>Experimentá con diferentes estilos y layouts; no hay mejor manera de aprender que jugando.</li>
+                <li>Seguí tutoriales y proyectos que te desafíen a usar CSS de formas nuevas.</li>
+                <li>Unite a comunidades online para compartir tus dudas y logros.</li>
+            </ul>
+        </div>
+    
+        <div class="additional-container">
+            <h4>Recursos Adicionales</h4>
+            <p>Para seguir aprendiendo sobre CSS, te recomiendo estos recursos:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN Web Docs: CSS</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools: CSS Tutorial</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks: Artículos y Tutoriales</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <aside class="sidebar">
+        <h4>Información Adicional</h4>
+        <p>CSS es fundamental para cualquier desarrollador web. Aprenderlo te permite transformar tu HTML en algo visualmente atractivo.</p>
+        <h4>Datos Interesantes</h4>
+        <ul>
+            <li>CSS fue creado por Håkon Wium Lie en 1994.</li>
+            <li>CSS3 introdujo nuevos módulos que mejoraron la forma de aplicar estilos.</li>
+            <li>Es esencial para el diseño de páginas web modernas y responsive.</li>
+        </ul>
+    </aside>
+</body>
+</html>

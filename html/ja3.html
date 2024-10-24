@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción de HTML5</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #29919ec7, #171844);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: background 0.5s ease;
+            display: flex;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .descripcion h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .descripcion h3 {
+            color: #0056b3;
+            margin-top: 15px;
+        }
+
+        .descripcion p,
+        .descripcion ul {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .descripcion ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Efecto de botón */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para los contenedores adicionales */
+        .additional-container {
+            background-color: #f0f8ff;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-container h4 {
+            color: #007BFF;
+        }
+
+        /* Estilo para las barras laterales */
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .sidebar h4 {
+            color: #007BFF;
+        }
+
+        .sidebar p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        /* Responsividad */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>HTML5</h1>
+            <p>La experiencia de un aprendiz de HTML.</p>
+        </header>
+
+        <section class="descripcion">
+            <h2>Mi Trayectoria Aprendiendo HTML</h2>
+            <p>Desde que decidí meterme en el mundo del desarrollo web, supe que HTML iba a ser mi primer paso. Recuerdo la emoción de crear mi primera página web, algo re simple, pero que me hizo sentir como un pro. Arranqué con tutoriales online y documentaciones que explicaban cómo armar el contenido con etiquetas.</p>
+
+            <h3>Lo Que Aprendí</h3>
+            <p>A medida que me metía más en HTML, fui aprendiendo a crear secciones con etiquetas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> y <code>&lt;footer&gt;</code>. Entendí la importancia de los elementos semánticos para que la página sea más accesible y se posicione mejor en Google. También jugué con formularios, y ahí comprendí cómo recolectar datos de los usuarios. ¡Un golazo!</p>
+
+            <h3>Herramientas y Recursos</h3>
+            <p>Usé varias herramientas que me facilitaron el camino, como:</p>
+            <ul>
+                <li>**Editores de texto** como Visual Studio Code y Sublime Text.</li>
+                <li>**Tutoriales online** en sitios como W3Schools y MDN Web Docs.</li>
+            </ul>
+
+            <h3>Proyectos Personales</h3>
+            <p>Me mandé varios proyectos personales que me ayudaron a poner en práctica lo que aprendí. Desde blogs simples hasta páginas de portafolio, cada proyecto fue una oportunidad para experimentar y mejorar mis habilidades.</p>
+
+            <h3>¿Qué Sigo Aprendiendo?</h3>
+            <p>Hoy en día sigo explorando las nuevas funcionalidades que trae HTML5, como APIs, multimedia y elementos interactivos. Cada día es una nueva chance para aprender y crecer.</p>
+        </section>
+
+        <div class="additional-container">
+            <h4>Consejos para Aprender HTML</h4>
+            <p>Para los que recién empiezan, les tiro algunos tips:</p>
+            <ul>
+                <li>No se queden solo con la lectura; hay que ir creando propias páginas</li>
+                <li>Exploren diferentes recursos y tutoriales para encontrar lo que mejor se adapte a su forma de aprender.</li>
+                <li>Únanse a comunidades online donde puedan hacer preguntas y compartir sus avances.</li>
+            </ul>
+        </div>
+
+        <div class="additional-container">
+            <h4>Recursos Adicionales</h4>
+            <p>Para seguir aprendiendo sobre HTML, recursos que visite:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs: HTML</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools: HTML Tutorial</a></li>
+                <li><a href="https://www.html5rocks.com/en/" target="_blank">HTML5 Rocks: Recursos y Tutoriales</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h4>Información Adicional</h4>
+        <p>HTML es clave para cualquier desarrollador web. Aprenderlo es el primer paso hacia el desarrollo web efectivo.</p>
+        <h4>Datos Interesantes</h4>
+        <ul>
+            <li>HTML fue desarrollado por Tim Berners-Lee en 1991.</li>
+            <li>HTML5 permite una mayor interactividad en las páginas web.</li>
+            <li>Es la base para el desarrollo de aplicaciones web modernas.</li>
+        </ul>
+    </aside>
+</body>
+</html>

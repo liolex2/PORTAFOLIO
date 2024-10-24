@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="css/loguear.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario de Login -->
+        <!-- Formulario de Login -->
+<div id="loginForm">
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+    <div class="toggle-link">
+        <span>¿No tienes una cuenta?</span>
+        <a onclick="toggleForms()">Regístrate aquí</a>
+    </div>
+</div>
+
+
+        <!-- Formulario de Registro -->
+        <div id="registerForm" style="display: none;">
+            <h2>Registrarse</h2>
+            <form action="register.php" method="post">
+                <input type="text" name="username" placeholder="Usuario" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="submit" value="Registrar">
+            </form>
+            <div class="toggle-link">
+                <span>¿Ya tienes una cuenta?</span>
+                <a onclick="toggleForms()">Inicia sesión aquí</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function toggleForms() {
+            var loginForm = document.getElementById('loginForm');
+            var registerForm = document.getElementById('registerForm');
+            if (loginForm.style.display === "none") {
+                loginForm.style.display = "block";
+                registerForm.style.display = "none";
+            } else {
+                loginForm.style.display = "none";
+                registerForm.style.display = "block";
+            }
+        }
+
+        $('#loginFormAjax').submit(function(event) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+
+            $.ajax({
+                url: 'login.php', 
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    var jsonData = JSON.parse(response);
+
+                    if (jsonData.success) {
+                        window.location.href = 'dashboard.php'; 
+                    } else {
+                        $('#error-message').text(jsonData.message).fadeIn().delay(1000).fadeOut();
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

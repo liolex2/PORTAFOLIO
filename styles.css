@@ -1,0 +1,572 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/*ñññññññññññññ*/
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/*SESION*/
+#sesion {
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.635);
+    color: white; 
+    padding: 3px 30px; 
+    border-radius: 5px; 
+    text-align: center; 
+    display: inline-block; 
+    cursor: pointer; 
+    font-size: 15px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+#sesion:hover {
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 5px 10%;
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img {
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+/* Menú */
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu-horizontal li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.menu-toggle {
+    display: none; 
+    cursor: pointer;
+    font-size: 2em;
+    color: #333;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-links {
+        display: none; /* El menú está oculto por defecto */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-links.show {
+        display: flex; /* El menú se muestra cuando tiene la clase 'show' */
+    }
+    
+    .menu-horizontal li {
+        text-align: center;
+        padding: 15px;
+    }
+    
+}
+
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 5px 10%;
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img {
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .menu-horizontal li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .menu-horizontal li a:hover {
+    color: #114654ca;
+}
+
+/* Menú desplegable */
+.menu-horizontal {
+    list-style: none;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 125px;
+    background-color: rgba(0, 0, 0, 0.288); 
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: rgba(19, 19, 19, 0);
+}
+
+.menu-vertical li a {
+    display: block;
+    color: rgb(117, 116, 116);
+    text-decoration: none;
+    padding: 6px 15px 15px 5px;
+}
+.menu-toggle {
+    display: none; /* Por defecto oculto en pantallas grandes */
+}
+
+@media screen and (max-width: 800px) {
+    .menu-horizontal {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    nav.show {
+        display: block;
+    }
+}
+
+/* Sección sobre mi */
+#sobre-mi {
+    background-color: #040828;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#sobre-mi h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#sobre-mi p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+#sobre-mi .imagen-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#sobre-mi .imagen-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #5CDB95;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+#sobre-mi .imagen-container img:hover {
+    transform: scale(1.05);
+}
+
+#sobre-mi .btn {
+    background-color: #32443ac4;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-mi .btn:hover {
+    background-color: #28423384;
+}
+
+#sobre-mi .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#sobre-mi .contenedor .descripcion {
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#sobre-mi .contenedor .descripcion h3 {
+    font-size: 1.8em;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+#sobre-mi .contenedor .descripcion p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+/* Habilidades */
+#habilidades {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#habilidades h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.habilidad {
+    background-color: rgba(0, 0, 0, 0.427);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.habilidad:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.habilidad h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.habilidad i {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #5CDB95;
+}
+
+.barra {
+    background-color: #000000;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.progreso {
+    height: 100%;
+    border-radius: 10px;
+    animation: fillBar 2s ease-out forwards;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.progreso-html {
+    background-color: #E34F26;
+}
+
+.progreso-css {
+    background-color: #1572B6;
+}
+
+.progreso-js {
+    background-color: #F7DF1E;
+}
+
+.progreso-php {
+    background-color: #777BB3;
+}
+
+/* Sección de Proyectos */
+#proyectos {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#proyectos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proyecto {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.proyecto:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.proyecto h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.proyecto p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+    flex-grow: 1; 
+}
+
+.proyecto a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5CDB95;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.proyecto a:hover {
+    background-color: #4ABF80;
+}
+
+
+/* Diseño responsivo */
+@media screen and (max-width: 768px) {
+    .proyectos-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .habilidades-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    #sobre-mi .contenedor {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .header .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .header .logo img {
+        height: 60px;
+    }
+}
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #5CDB95;
+}
+
+.footer-section p {
+    font-size: 1.1em;
+    margin: 0 0 10px 0;
+    color: #ddd;
+}
+
+/* Iconos de redes sociales */
+.footer-socials {
+    margin: 20px 0;
+}
+
+.footer-socials a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #5CDB95;
+}
+
+/* Enlaces rápidos */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-links a:hover {
+    color: #5CDB95;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

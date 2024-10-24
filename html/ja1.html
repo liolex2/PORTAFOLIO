@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción de HTML5</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #29919ec7, #171844);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: background 0.5s ease;
+            display: flex;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .descripcion h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .descripcion h3 {
+            color: #0056b3;
+            margin-top: 15px;
+        }
+
+        .descripcion p,
+        .descripcion ul {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .descripcion ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Efecto de botón */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para los contenedores adicionales */
+        .additional-container {
+            background-color: #f0f8ff;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-container h4 {
+            color: #007BFF;
+        }
+
+        /* Estilo para las barras laterales */
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .sidebar h4 {
+            color: #007BFF;
+        }
+
+        .sidebar p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        /* Responsividad */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>JavaScript</h1>
+            <p>La experiencia de un aprendiz de JavaScript.</p>
+        </header>
+    
+        <section class="descripcion">
+            <h2>Mi Trayectoria Aprendiendo JavaScript</h2>
+            <p>Cuando ya tenía un poco de manejo con HTML y CSS, me di cuenta de que para hacer mis páginas más interactivas necesitaba algo más: ahí fue cuando conocí JavaScript. Desde el primer momento que vi cómo podía agregar dinámicas a mis proyectos, me enganché. La emoción de ver cómo un simple clic podía cambiar todo en la pantalla fue indescriptible.</p>
+    
+            <h3>Lo Que Aprendí</h3>
+            <p>Con el tiempo, fui aprendiendo a usar variables, funciones y eventos. Aprendí a manipular el DOM y a interactuar con la estructura de mis páginas de forma dinámica. Descubrí que podía crear formularios que respondieran al instante y que podía hacer mis sitios más atractivos y funcionales. ¡Un cambio de juego total!</p>
+    
+            <h3>Herramientas y Recursos</h3>
+            <p>Me apoyé en varias herramientas y recursos que me ayudaron a avanzar, como:</p>
+            <ul>
+                <li><strong>Editores de texto</strong>: Visual Studio Code y Atom, que son geniales para escribir código.</li>
+                <li><strong>Frameworks</strong>: Aprendí a usar jQuery al principio para simplificar el manejo del DOM, y después me metí con frameworks como React.</li>
+            </ul>
+    
+            <h3>Proyectos Personales</h3>
+            <p>Me lancé a varios proyectos personales donde pude aplicar lo que aprendí. Desde aplicaciones web interactivas hasta juegos simples, cada experiencia fue una oportunidad para experimentar y mejorar mis habilidades.</p>
+    
+            <h3>¿Qué Sigo Aprendiendo?</h3>
+            <p>Hoy en día sigo explorando nuevas características de JavaScript, como las funciones asíncronas y el uso de APIs para conectar mis proyectos con datos externos. Cada día es un nuevo desafío que me emociona y me hace querer aprender más.</p>
+        </section>
+    
+        <div class="additional-container">
+            <h4>Consejos para Aprender JavaScript</h4>
+            <p>Para los que recién empiezan, les dejo algunos consejos:</p>
+            <ul>
+                <li>No se frustren si algo no funciona a la primera; la programación es prueba y error.</li>
+                <li>Practiquen mucho: cuanto más código escriban, más cómodos se sentirán.</li>
+                <li>Busquen proyectos pequeños para ir incorporando lo que aprenden en la práctica.</li>
+            </ul>
+        </div>
+    
+        <div class="additional-container">
+            <h4>Recursos Adicionales</h4>
+            <p>Para seguir aprendiendo sobre JavaScript, aquí algunos recursos que recomiendo:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN Web Docs: JavaScript</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools: JavaScript Tutorial</a></li>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript.info: Un sitio para aprender JavaScript desde cero.</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <aside class="sidebar">
+        <h4>Información Adicional</h4>
+        <p>JavaScript es esencial para cualquier desarrollador web que quiera crear aplicaciones interactivas y dinámicas.</p>
+        <h4>Datos Interesantes</h4>
+        <ul>
+            <li>JavaScript fue creado por Brendan Eich en 1995.</li>
+            <li>Es uno de los lenguajes más populares y usados en el desarrollo web.</li>
+            <li>JavaScript permite crear aplicaciones web complejas que funcionan en tiempo real.</li>
+        </ul>
+    </aside>
+    
+</body>
+</html>

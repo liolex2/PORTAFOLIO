@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción de HTML5</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #29919ec7, #171844);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: background 0.5s ease;
+            display: flex;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .descripcion h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .descripcion h3 {
+            color: #0056b3;
+            margin-top: 15px;
+        }
+
+        .descripcion p,
+        .descripcion ul {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .descripcion ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Efecto de botón */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para los contenedores adicionales */
+        .additional-container {
+            background-color: #f0f8ff;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-container h4 {
+            color: #007BFF;
+        }
+
+        /* Estilo para las barras laterales */
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .sidebar h4 {
+            color: #007BFF;
+        }
+
+        .sidebar p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        /* Responsividad */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>PHP</h1>
+            <p>La experiencia de un aprendiz de PHP.</p>
+        </header>
+    
+        <section class="descripcion">
+            <h2>Mi Trayectoria Aprendiendo PHP</h2>
+            <p>Una vez que empecé a crear aplicaciones web más complejas, me di cuenta de que necesitaba un lenguaje del lado del servidor. Ahí fue cuando me encontré con PHP. Desde el primer momento, supe que era lo que necesitaba para darle vida a mis proyectos y hacer que interactuaran con bases de datos. ¡No podía creer lo fácil que era conectar todo!</p>
+    
+            <h3>Lo Que Aprendí</h3>
+            <p>Con el tiempo, fui aprendiendo a manejar variables, funciones y cómo trabajar con formularios. Entendí la importancia de las bases de datos y cómo PHP se comunica con ellas. Aprendí a usar MySQL para almacenar y recuperar datos, y eso me permitió crear sistemas mucho más dinámicos y útiles. ¡Un gran paso adelante!</p>
+    
+            <h3>Herramientas y Recursos</h3>
+            <p>Me apoyé en varios recursos que fueron clave en mi aprendizaje:</p>
+            <ul>
+                <li><strong>Editores de texto</strong>: Visual Studio Code y PhpStorm, que son increíbles para desarrollar en PHP.</li>
+                <li><strong>Frameworks</strong>: Me metí con Laravel, que facilita un montón el trabajo y hace que el código se vea más limpio.</li>
+            </ul>
+    
+            <h3>Proyectos Personales</h3>
+            <p>Me lancé a varios proyectos personales donde pude aplicar lo que aprendí. Desde sistemas de gestión hasta páginas de registro de usuarios, cada uno de estos proyectos fue una oportunidad para poner en práctica todo lo que había aprendido.</p>
+    
+            <h3>¿Qué Sigo Aprendiendo?</h3>
+            <p>Hoy en día sigo explorando nuevas funcionalidades de PHP y sus mejores prácticas. Cada día es una nueva oportunidad para mejorar mis habilidades y optimizar mi código.</p>
+        </section>
+    
+        <div class="additional-container">
+            <h4>Consejos para Aprender PHP</h4>
+            <p>Para los que recién empiezan:</p>
+            <ul>
+                <li>No se asusten con los errores; son parte del proceso de aprendizaje.</li>
+                <li>Practiquen mucho y traten de resolver problemas reales.</li>
+                <li>Lean la documentación oficial de PHP, es una fuente de información muy útil.</li>
+            </ul>
+        </div>
+    
+        <div class="additional-container">
+            <h4>Recursos Adicionales</h4>
+            <p>Para seguir aprendiendo sobre PHP, aquí algunos recursos que recomiendo:</p>
+            <ul>
+                <li><a href="https://www.php.net/manual/es/" target="_blank">Documentación oficial de PHP</a></li>
+                <li><a href="https://www.w3schools.com/php/" target="_blank">W3Schools: PHP Tutorial</a></li>
+                <li><a href="https://laravel.com/docs" target="_blank">Laravel: Documentación de Framework</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <aside class="sidebar">
+        <h4>Información Adicional</h4>
+        <p>PHP es un lenguaje fundamental para el desarrollo web del lado del servidor, y aprenderlo abre muchas puertas en el mundo de la programación.</p>
+        <h4>Datos Interesantes</h4>
+        <ul>
+            <li>PHP fue creado por Rasmus Lerdorf en 1995.</li>
+            <li>Es uno de los lenguajes más usados para el desarrollo web, especialmente con sistemas de gestión de contenido como WordPress.</li>
+            <li>Permite crear aplicaciones web robustas y seguras.</li>
+        </ul>
+    </aside>
+    
+</body>
+</html>
